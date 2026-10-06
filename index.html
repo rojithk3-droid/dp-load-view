@@ -5910,6 +5910,38 @@ body.dark .vtoast{background:#EDF1F7;color:#0D1526}
 .cc-port .cc-modal-overlay{z-index:95}
 #commandCenterView.tracktrace-page-active .cc-tollfuel-page{display:none}
 #commandCenterView.tollfuel-page-active .cc-tollfuel-page{display:flex}
+/* ---- modals: native size + Load Entry chrome ---- */
+.cc-port .cc-modal-overlay{zoom:1.4925;background:rgba(13,21,38,.45);backdrop-filter:blur(2px);padding:20px}
+.cc-port .cc-modal{border-radius:var(--r);border:1px solid var(--line);box-shadow:0 22px 56px -14px rgba(13,21,38,.38);background:var(--surface)}
+.cc-port .cc-modal-head{padding:13px 18px;border-bottom:1px solid var(--line-2);background:var(--surface);gap:10px}
+.cc-port .cc-modal-title{font-family:Archivo,Inter,sans-serif;font-size:15px;font-weight:600;letter-spacing:-.1px;color:var(--ink)}
+.cc-port .cc-modal-loadno{font-size:11.5px;color:var(--ink-3);font-weight:400}
+.cc-port .cc-modal-close{width:28px;height:28px;border-radius:7px;color:var(--ink-3)}
+.cc-port .cc-modal-close:hover{background:#F1F4F8;color:var(--ink)}
+.cc-port .cc-modal-rule{background:var(--line-2)}
+.cc-port .cc-modal-body{padding:16px 18px}
+.cc-port .cc-modal-foot{padding:12px 18px;border-top:1px solid var(--line-2);background:#FAFBFD;gap:16px;border-radius:0 0 var(--r) var(--r)}
+.cc-port .cc-modal-meta{font-size:12px}
+.cc-port .cc-modal .cc-field{gap:6px}
+.cc-port .cc-modal .cc-field label{font-size:11.5px;font-weight:600;color:var(--ink-2)}
+.cc-port .cc-modal .cc-field input[type="text"],.cc-port .cc-modal .cc-field input[type="date"],.cc-port .cc-modal .cc-field input[type="time"],
+.cc-port .cc-modal .cc-field input[type="datetime-local"],.cc-port .cc-modal .cc-field input[type="number"],.cc-port .cc-modal .cc-field select,
+.cc-port .cc-modal .cc-select-wrap select{height:34px;border:1px solid var(--line);border-radius:7px;background:var(--surface);color:var(--ink);font-size:12.5px;padding-top:0;padding-bottom:0}
+.cc-port .cc-modal .cc-field textarea{border:1px solid var(--line);border-radius:7px;background:var(--surface);color:var(--ink);font-size:12.5px}
+.cc-port .cc-modal .cc-field input:hover,.cc-port .cc-modal .cc-field select:hover,.cc-port .cc-modal .cc-field textarea:hover{border-color:#C9D1DC}
+.cc-port .cc-modal .cc-field input:focus,.cc-port .cc-modal .cc-field select:focus,.cc-port .cc-modal .cc-field textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(15,111,255,.12);outline:0}
+.cc-port .cc-btn-outline-modal,.cc-port .cc-btn-solid-modal{height:34px;padding:0 16px;border-radius:7px;font-size:12.5px;font-weight:600}
+.cc-port .cc-btn-outline-modal{border:1px solid var(--line);color:var(--ink-2);background:var(--surface)}
+.cc-port .cc-btn-outline-modal:hover{background:#F7F9FC;color:var(--ink);border-color:#C9D1DC}
+.cc-port .cc-btn-solid-modal{background:var(--blue)}
+.cc-port .cc-btn-solid-modal:hover{background:var(--blue-hover)}
+.cc-port .cc-reminder-btn{border-radius:20px}
+.cc-port .cc-editextend-title,.cc-port .cc-addactions-title,.cc-port .cc-confirm-title,.cc-port .cc-loadboard-success-title{font-family:Archivo,Inter,sans-serif;font-size:15px;font-weight:600;letter-spacing:-.1px;color:var(--ink)}
+.cc-port .cc-loadboard-section-title{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2)}
+.cc-port .cc-editextend-sub,.cc-port .cc-loadboard-sub{font-size:12px;color:var(--ink-3)}
+body.dark .cc-port .cc-modal-foot{background:#1B2432}
+body.dark .cc-port .cc-btn-outline-modal:hover,body.dark .cc-port .cc-modal-close:hover{background:#232E40}
+body.dark .cc-port .cc-btn-solid-modal{color:#08111E}
 </style>
 </head>
 <body id="commandCenterView">
